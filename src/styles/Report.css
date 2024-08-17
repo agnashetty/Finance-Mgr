@@ -1,0 +1,80 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 10px 30px;
+  
+}
+.tabledata{
+  overflow-y: scroll;
+  height: calc(100vh - 200px);
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  margin: 5px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.btnUpdate {
+  background-color: #183d3d;
+  color: #93b1a6;
+}
+
+.btnUpdate:hover {
+  background-color: #5c8374;
+  color: #040d12;
+  box-shadow: 0px 5px 5px;
+}
+.btnDelete {
+  background-color: darkred;
+  color: #93b1a6;
+}
+
+.btnDelete:hover {
+  color: #040d12;
+
+  box-shadow: 0px 5px 5px;
+}
+tr:nth-child(even) {
+  background-color: #5c8374;
+}
+
+tr:nth-child(odd) {
+  background-color: #84a7a1;
+}
+
+thead th {
+  background-color: #040d12;
+  color: #93b1a6;
+}
+
+.btn-filter {
+  display: flex;
+  justify-content: center;
+}
+
+
+.NoReport{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+@media screen and (max-width:600px) {
+  .tabledata{
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 400px;
+    
+  }
+}

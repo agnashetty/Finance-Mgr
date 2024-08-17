@@ -1,0 +1,25 @@
+.Updatecontainer{
+  position: absolute;
+    left: 50%;
+    top: 20px;
+    background-color: #183d3d;
+    width: 50%;
+    transform: translateX(-50%);
+    border-radius: 5%;
+    color: white;
+}
+
+.closebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.closebtn button{
+    width: 100px;
+}
+
+.closebtn button:hover{
+    background-color: #84a7a1;
+}

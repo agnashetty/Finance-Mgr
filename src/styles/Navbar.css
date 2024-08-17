@@ -1,0 +1,89 @@
+.navbar{
+    width: 100%;
+    height : 80px;
+    background-color:  #040D12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar a{
+text-decoration: none;
+padding: 10px;
+color: black;
+font-size: 20px;
+font-weight: bold;
+  color: #93B1A6;
+}
+
+.btn_logout{
+   width: 100px;
+    right: 20px;
+    position: absolute;
+    box-shadow: 0px 5px 5px;
+    background-color: #93B1A6;
+
+  }
+
+.btn_logout:hover{
+  background-color: #183d3d;
+  color: #93b1a6;
+}
+
+.navbar a:hover{
+  color: #FAF0E6;
+
+}
+
+.togglebtn{
+  display: none;
+}
+
+
+@media screen and (max-width:600px) {
+  
+
+  .togglebtn {
+    display: block;
+    left : 10px;
+    position: absolute;
+  }
+
+  .togglebtn button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #FAF0E6;
+    cursor: pointer;
+    
+  }
+
+  .links {
+    display: none;
+  }
+
+  .navbar{
+    flex-direction: column;
+  }
+  .links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    background-color: #333;
+    height: 300px;
+    align-items: center;
+    z-index: 999;
+    width: 200px;
+  }
+
+  
+  .navbar a {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+}
+
+

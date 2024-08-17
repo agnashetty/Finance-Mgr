@@ -1,0 +1,61 @@
+.piecontainer {
+  position: absolute;
+ left: 30px;
+ top:0px;
+  background-color: aquamarine;
+}
+
+.expenseChart {
+  position: absolute;
+  left: 30px;
+  width: 350px;
+}
+
+.incomeChart {
+  position: absolute;
+  left: 450px;
+  width: 350px;
+}
+
+.balance {
+  position: absolute;
+  background-color: antiquewhite;
+  padding: 20px;
+  width: 300px;
+  top: 430px;
+  height: 15px;
+  font-size: 20px;
+  border-radius: 10%;
+  box-shadow: 0px 5px 5px;
+}
+
+.balance p {
+  margin-left: 50px;
+}
+
+.incomeChart h2 {
+  padding-top: 10px;
+}
+.expenseChart h2 {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .incomeChart {
+    position: absolute;
+    top: 450px;
+    left: 10px;
+  }
+
+  .balance {
+    left: 10px;
+    top: 900px;
+  }
+
+  .piecontainer {
+    left: 10px;
+  }
+  .expenseChart {
+    left: 10px;
+  }
+}

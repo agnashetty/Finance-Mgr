@@ -1,0 +1,83 @@
+.btnplus {
+  background-color: #040D12;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-style: none;
+  color: #def9c4;
+  font-size: 50px;
+  position: absolute;
+  right: 15px;
+  bottom: 90px;
+  box-shadow: 0px 5px 5px;
+
+}
+
+.btnplus:hover {
+  background-color: #5C8374;
+  color: black;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.formAddData {
+  background-color: #B4D6CD;
+  height: 480px;
+  width: 50%; /* adjust this value to control the form's width */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  
+}
+label{
+    margin: 0 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+input, select {
+  width: 90%;
+  display: block;
+  padding: 10px 0px;
+  margin: 8px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 90%;
+  background-color: #468585;
+  color: white;
+  padding: 14px 10px;
+  margin: 40px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text], input[type=number], input[type=date], select{
+text-indent: 10px;
+font-size: 15px;
+}
+
+@media screen and (max-width:600px) {
+
+  .btnplus {
+    margin-bottom: 10px;
+    position: fixed;
+  }
+}
